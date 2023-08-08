@@ -1,0 +1,35 @@
+App Router-->
+/**/
+In version 13, Next.js introduced a new App Router built on React Server Components, which supports shared layouts, nested routing, loading states, error handling, and more.
+
+The App Router works in a new directory named app. The app directory works alongside the pages directory to allow for incremental adoption. This allows you to opt some routes of your application into the new behavior while keeping other routes in the pages directory for previous behavior.
+/**/
+
+Public-->
+/**/
+Next.js can serve static files, like images, under a folder called public in the root directory. Files inside public can then be referenced by your code starting from the base URL (/).
+/**/
+
+layout-->
+/**/
+A layout is UI that is shared between multiple pages. On navigation, layouts preserve state, remain interactive, and do not re-render. Layouts can also be nested.
+
+You can define a layout by default exporting a React component from a layout.js file. The component should accept a children prop that will be populated with a child layout (if it exists) or a child page during rendering.
+/**/
+
+page-->
+/**/
+A page is UI that is unique to a route. You can define pages by exporting a component from a page.js file. Use nested folders to define a route and a page.js file to make the route publicly accessible.
+/**/
+
+.gitignore: This file specifies which files and folders should be excluded from version control when using Git. It's a best practice to list files that are generated during development or build processes, as well as sensitive information.
+
+next.config.js: This is the configuration file for Next.js. You can use this file to customize various aspects of your app's behavior, like setting up environment variables, configuring webpack, and more.
+
+package.json: This file holds metadata about your project and lists the dependencies your project relies on. You can also define scripts, such as start, build, and test, that you can run using npm or yarn.
+
+package-lock.json or yarn.lock: These files lock down the exact versions of dependencies installed in your project to ensure consistent builds across different environments.
+
+README.md: This is a markdown file where you can provide information about your project, how to set it up, and any other relevant details for other developers working on the project.
+
+tsconfig.json (optional): If you are using TypeScript in your project, this file is used to configure TypeScript settings.
